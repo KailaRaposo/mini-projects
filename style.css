@@ -114,3 +114,17 @@ h1{
     transform: none;
   }
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#feedback-container {
+    margin-top: 20px;
+    text-align: center;
+}
