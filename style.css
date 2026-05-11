@@ -1,0 +1,107 @@
+/* RESET - Remove espaços padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNDO DA PÁGINA */
+body {
+    background: #394b57;
+    font-family: 'Times New Roman', serif;
+    min-height: 100vh;
+    margin-left: 0;
+    display: inline-block; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* DIV PRINCIPAL DA PÁGINA */
+.body-container {
+    border-radius: 20px;
+    margin: 50px 50px;
+    align-items: center;   
+}
+
+/* DIV PRINCIPAL DA CALCULADORA */
+.calculator-container {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/* DIV DOS BUTOES DA CALCULADORA */
+.calculator-buttons {
+    border-radius: 5px;
+    width: 26%;
+    border: #1c2328 solid 2px;
+    background: #1c2328;
+}
+
+/* BOTÕES */
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 55px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #000000 3px 5px 5px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #d0d0d0;
+}
+
+/* EFEITO: BOTÃO SENDO CLICADO */
+button:active {
+    transform: scale(0.95);
+}
+
+/* TÍTULO */
+#title-container {
+    text-align: left;
+    color: #ffffff;
+    margin: 5px;
+    height: 5px;
+    font-size: 8px;
+}
+
+h1{
+    box-shadow: #000000 3px 5px 5px;
+    height: 4px;
+    width: 30px;
+}
+
+/* DISPLAY (CAMPO DE TEXTO) */
+#display {
+    width: 26%;
+    font-size: 24px;
+    text-align: right;
+    padding: 20px;
+    border: 2px solid#1c2328;
+    border-radius: 5px;
+    background: #1c2328;
+}
+
+/* BOTÕES DE OPERAÇÃO (+, -, ×, ÷) */
+.operador {
+    background: #7b91a2;
+    color: white;
+}
+
+/* BOTÃO LIMPAR (C) */
+.limpar {
+    background: #b23229;
+    color: white;
+}
+
+/* BOTÃO IGUAL (=) */
+.calcular {
+    background: #51a854;
+    color: white;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="body-container">
+
+        <div id="title-container">
+            <h1>calc</h1>
+        </div>
+
+        <div class="calculator-container">
+            <input type="text" id="display" readonly size="20">   
+            <br><br>   
+        </div>
+
+        <div class="calculator-buttons">
+            <button onclick="adicionar('1')" >1</button>
+            <button onclick="adicionar('2')" >2</button>
+            <button onclick="adicionar('3')" >3</button>
+            <button onclick="adicionar('/')" class="operador">÷</button>
+            
+            <button onclick="adicionar('4')" >4</button>
+            <button onclick="adicionar('5')" >5</button>
+            <button onclick="adicionar('6')" >6</button>
+            <button onclick="adicionar('*')" class="operador">×</button>
+            
+            <button onclick="adicionar('7')" >7</button>
+            <button onclick="adicionar('8')" >8</button>
+            <button onclick="adicionar('9')" >9</button>
+            <button onclick="adicionar('-')" class="operador">-</button>
+            
+            <button onclick="adicionar('0')" >0</button>
+            <button onclick="limpar()" class="limpar">DEL</button>
+            <button onclick="calcular()" class="calcular">=</button>
+            <button onclick="adicionar('+')" class="operador">+</button>
+
+        </div>
+    </div>
+
+</body>
+</html>
