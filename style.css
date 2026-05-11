@@ -10,8 +10,10 @@ body {
     background: #394b57;
     font-family: 'Times New Roman', serif;
     min-height: 100vh;
-    margin-left: 0;
-    display: inline-block; 
+    margin: 0;
+    /*margin-left: 0;*/
+    /*display: inline-block;*/
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -19,7 +21,8 @@ body {
 /* DIV PRINCIPAL DA PÁGINA */
 .body-container {
     border-radius: 20px;
-    margin: 50px 50px;
+    /*margin: 50px 50px;*/
+    margin: 20px;
     align-items: center;   
 }
 
@@ -31,15 +34,23 @@ body {
 
 /* DIV DOS BUTOES DA CALCULADORA */
 .calculator-buttons {
-    border-radius: 5px;
+   /* border-radius: 5px;
     width: 26%;
     border: #1c2328 solid 2px;
+    background: #1c2328;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
     background: #1c2328;
+    border-radius: 10px;
 }
 
 /* BOTÕES */
 button {
-    margin-top: 10px;
+    /*margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 15px;
     margin-right: 10px;
@@ -49,7 +60,15 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: #000000 3px 5px 5px;*/
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     box-shadow: #000000 3px 5px 5px;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {
@@ -79,13 +98,23 @@ h1{
 
 /* DISPLAY (CAMPO DE TEXTO) */
 #display {
-    width: 26%;
+    /*width: 26%;
     font-size: 24px;
     text-align: right;
     padding: 20px;
     border: 2px solid#1c2328;
     border-radius: 5px;
     background: #1c2328;
+    */
+    width: 100%;
+    max-width: 320px;
+    font-size: 24px;
+    text-align: right;
+    padding: 15px;
+    border: 2px solid #1c2328;
+    border-radius: 5px;
+    background: #1c2328;
+    color: white;
 }
 
 /* BOTÕES DE OPERAÇÃO (+, -, ×, ÷) */
