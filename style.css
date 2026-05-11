@@ -33,7 +33,7 @@ body {
 .calculator-buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 8px;
     width: 100%;
     max-width: 320px;
     padding: 10px;
@@ -48,7 +48,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: #000000 3px 5px 5px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
     width: 100%;
     -webkit-tap-highlight-color: transparent;
 }
@@ -60,7 +60,7 @@ button:hover {
 
 /* EFEITO: BOTÃO SENDO CLICADO */
 button:active {
-    transform: scale(0.95);
+    transform: none;
 }
 
 /* TÍTULO */
@@ -113,12 +113,4 @@ h1{
   button:hover {
     transform: none;
   }
-
-  button {
-  box-shadow: none;
-    }
-
-    button:active {
-        transform: none;
-    }
 }
