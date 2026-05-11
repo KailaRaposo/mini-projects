@@ -8,7 +8,7 @@ function limpar(){
 
 function calcular(){
     let display = document.getElementById("display");
-    
+
     try {
     let resultado = eval(display.value);
     display.value = resultado;
