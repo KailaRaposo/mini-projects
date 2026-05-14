@@ -9,7 +9,8 @@
 body {
     background: #394b57;
     font-family: 'Times New Roman', serif;
-    min-height: 100vh;
+    height: 70vh;
+    padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
