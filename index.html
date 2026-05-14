@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -23,15 +22,20 @@
         </div>
 
         <div class="calculator-buttons">
+            <button onclick="adicionar('(')" class="parenteses">(</button>
+            <button onclick="adicionar(')')" class="parenteses">)</button>
+            <button onclick="adicionar('%')" class="percentagem">%</button>
+            <button onclick="limpar('C')" class="limpar">C</button>
+
             <button onclick="adicionar('1')" >1</button>
             <button onclick="adicionar('2')" >2</button>
             <button onclick="adicionar('3')" >3</button>
-            <button onclick="adicionar('/')" class="operador">÷</button>
+            <button onclick="adicionar('÷')" class="operador">÷</button>
             
             <button onclick="adicionar('4')" >4</button>
             <button onclick="adicionar('5')" >5</button>
             <button onclick="adicionar('6')" >6</button>
-            <button onclick="adicionar('*')" class="operador">×</button>
+            <button onclick="adicionar('×')" class="operador">×</button>
             
             <button onclick="adicionar('7')" >7</button>
             <button onclick="adicionar('8')" >8</button>
@@ -39,7 +43,7 @@
             <button onclick="adicionar('-')" class="operador">-</button>
             
             <button onclick="adicionar('0')" >0</button>
-            <button onclick="limpar()" class="limpar">DEL</button>
+            <button onclick="adicionar('.')" class="decimal">.</button>
             <button onclick="calcular()" class="calcular">=</button>
             <button onclick="adicionar('+')" class="operador">+</button>
         </div>
