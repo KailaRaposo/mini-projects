@@ -18,6 +18,13 @@
 
         <div class="calculator-container">
             <input type="text" id="display" readonly size="20">   
+            <button id="historico-button" onclick="toggleHistorico()">↺</button>
+
+            <div id="historico-popup">
+                <h3>Histórico</h3>
+                <ul id="historico"></ul>
+
+            </div>
             <br><br>   
         </div>
 
@@ -25,7 +32,7 @@
             <button onclick="adicionar('(')" class="parenteses">(</button>
             <button onclick="adicionar(')')" class="parenteses">)</button>
             <button onclick="adicionar('%')" class="percentagem">%</button>
-            <button onclick="limpar('C')" class="limpar">C</button>
+            <button onclick="limpar('AC')" class="limpar">AC</button>
 
             <button onclick="adicionar('1')" >1</button>
             <button onclick="adicionar('2')" >2</button>
@@ -46,6 +53,10 @@
             <button onclick="adicionar('.')" class="decimal">.</button>
             <button onclick="calcular()" class="calcular">=</button>
             <button onclick="adicionar('+')" class="operador">+</button>
+
+            <button onclick="adicionar('√')" class="raizQuadrada">√</button>
+            <button onclick="apagarUltimo('CE')" class="apagarUltimo">CE</button>
+            <button onclick="adicionar('^')" class="potencia">^</button>
         </div>
 
         <div id="feedback-container">
