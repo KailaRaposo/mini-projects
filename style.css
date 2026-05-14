@@ -9,7 +9,7 @@
 body {
     background: #394b57;
     font-family: 'Times New Roman', serif;
-    height: 70vh;
+    min-height: 100vh;
     padding: 0;
     margin: 0;
     display: flex;
@@ -107,6 +107,21 @@ h1{
 /* BOTÃO IGUAL (=) */
 .calcular {
     background: #51a854;
+    color: white;
+}
+
+.decimal {
+    background: #7b91a2;
+    color: white;
+}
+
+.parenteses {
+    background: #7b91a2;
+    color: white;
+}
+
+.percentagem {
+    background: #7b91a2;
     color: white;
 }
 
